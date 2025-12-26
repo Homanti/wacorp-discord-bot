@@ -209,7 +209,7 @@ async def link(interaction: discord.Interaction, user_id: int):
                 embed.add_field(name="User ID", value=f"```{user_id}```", inline=True)
                 embed.add_field(name="Discord", value=f"{interaction.user.mention} ({interaction.user.id})",
                                 inline=False)
-                embed.add_field(name="РП История", value=f"```{rp_history}```", inline=False)
+                embed.description=f"РП История: ```{rp_history}```"
                 embed.add_field(name="Скин", value=f"[Просмотр 3D](https://wacorp-skin-viewer.up.railway.app/?url={skin_url})", inline=False)
 
                 if skin_url:
